@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link n Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- This CDN version of tailwindCSS is
+NOT recommended for use -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'neumorphic': '#eef1f8',
+                    'neumorphic-shadow': '#cacdd3',
+                    'neumorphic-highlight': '#ffffff',
+                    'accent': '#5ba4cf',
+                    'accent-hover': '#4a93be',
+                },
+                boxShadow: {
+                    'neumorphic': '20px 20px 60px #cacdd3, -20px -20px 60px #ffffff',
+                    'neumorphic-inset': 'inset 4px 4px 8px #cacdd3, inset -4px -4px 8px #ffffff',
+                    'neumorphic-button': '4px 4px 8px #cacdd3, -4px -4px 8px #ffffff',
+                    'neumorphic-button-hover': '2px 2px 4px #cacdd3, -2px -2px 4px #ffffff',
+                },
+            },
+        },
+    }
+</script>
+
+<body class="bg-slate-200 grid place-content-center h-screen">
+    
+    <div>
+        <div class="
+            p-10 
+            grid place-content-center 
+            rounded-lg
+            shadow-neumorphic-button
+        ">
+            <!-- heading -->
+            <div class="p-3 py-5">
+                <!-- logo -->
+                <div class="place-items-center">
+                    <img 
+                        src="LNF_2.jpg" 
+                        alt="logo"
+                        class="size-20 rounded-[50%] shadow-neumorphic-button p-1"
+                    >
+                </div>
+
+                <!-- descript -->
+                <div class="place-items-center">
+                    <h1 class="text-2xl font-bold">LINK N FOUND</h1>
+                    <h6 class="text-sm text-gray-400">Link Storage made Easy</h6>
+                    <!-- <h2 class="text-xl font-semibold mt-5">LOG IN</h2> -->
+                </div>
+
+            </div>
+
+            <form class="space-y-3.5">
+                <!-- username -->
+                <div class="mx-3 p-2">
+                    <input 
+                        type="text" 
+                        placeholder="username" 
+                        id="username"
+                        class="
+                        w-full 
+                        h-12 
+                        pl-10 
+                        bg-neumorphic 
+                        shadow-neumorphic-inset 
+                        rounded-md 
+                        placeholder-gray-400
+                        focus:outline-none 
+                        focus:ring-2 
+                        focus:ring-gray-400
+                        selection: text-gray-400
+                        "
+                    >
+                </div>
+
+                <!-- password -->
+                <div class="mx-3 p-2">
+                    <input 
+                        type="password" 
+                        placeholder="password" 
+                        id="password"
+                        class="
+                        w-full 
+                        h-12 
+                        pl-10 
+                        bg-neumorphic 
+                        border-0 
+                        shadow-neumorphic-inset 
+                        rounded-md 
+                        placeholder-gray-400 
+                        focus:outline-none 
+                        focus:ring-2 
+                        focus:ring-gray-400
+                        selection: text-gray-400
+                        "
+                    >
+                </div>
+
+            </form>
+            
+            <!-- button -->
+            <div class="mx-3.5 p-2">
+                <button class="
+                    w-full 
+                    h-12 
+                    text-white 
+                    bg-accent 
+                    hover:bg-accent-hover 
+                    shadow-neumorphic-button 
+                    hover:shadow-neumorphic-button-hover 
+                    transition-all 
+                    duration-200 
+                    rounded-md 
+                    font-medium
+                ">
+                    Login
+                </button>
+            </div>
+
+            <!-- forgot and signin -->
+            <div class="flex place-content-center space-x-2">
+                <a href="#" class="text-gray-600 hover:text-accent-hover">Forgot password?</a>
+                <span class="text-gray-600">or</span>
+                <a href="#" class="font-medium text-accent hover:text-accent-hover hover:underline">Sign Up</a>
+            </div>
+
+        </div>
+    </div>
+    
+</body>  
+</html>
+
+
+<!-- p-3
+                            rounded-xl
+                            placeholder-white
+                            bg-slate-300
+                            border-2
+                            border-t-slate-500
+                            border-l-slate-500
+                            border-b-slate-50
+                            border-r-slate-50 -->
+
+<!-- <div class="">
+    <div class="
+        bg-slate-200
+        p-10  
+        border-4
+        rounded-md
+        border-l-slate-50
+        border-t-slate-50
+        border-r-slate-500
+        border-b-slate-500
+    ">
+        <h1 class="text-slate-">BOX DIV</h1>        
+    </div>
+</div> -->
